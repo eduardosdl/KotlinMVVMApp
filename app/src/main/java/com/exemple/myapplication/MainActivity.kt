@@ -31,6 +31,13 @@ class MainActivity : AppCompatActivity() {
 
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 
+        // instaciacao de um view model que necessita de construtor com parametros
+//      viewModel =
+//          ViewModelProvider(this, MainViewModel.MainViewModelFactory(ProductRepository())).get(
+//              MainViewModel::class.java
+//          )
+
+
         binding.recyclerview.adapter = adapter
     }
 

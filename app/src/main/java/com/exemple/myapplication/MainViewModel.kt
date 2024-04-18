@@ -28,4 +28,15 @@ class MainViewModel: ViewModel() {
             isLoading.value = false
         })
     }
+
+    // factory para que seja possivel instanciar a view model passando parametros
+//    class MainViewModelFactory (private val repository: ProductRepository) : ViewModelProvider.Factory {
+//        override fun <T : ViewModel> create(modelClass: Class<T>): T {
+//          return if (modelClass.isAssignableFrom(MainViewModel::class.java)) {
+//              MainViewModel(this.repository) as T
+//          } else {
+//              throw IllegalArgumentException("ViewModel Not Found")
+//          }
+//      }
+//  }
 }
